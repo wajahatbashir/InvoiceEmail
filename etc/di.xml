@@ -1,0 +1,14 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Api\OrderManagementInterface">
+        <plugin name="MyOrderPlaceAfterPlugin" type="WB\InvoiceEmail\Plugin\Order\PlaceAfterPlugin" sortOrder="99" />
+    </type>
+    <type name="WB\InvoiceEmail\Logger\Logger">
+        <arguments>
+            <argument name="name" xsi:type="string">cod_order_invoice</argument>
+            <argument name="handlers" xsi:type="array">
+                <item name="system" xsi:type="object">WB\InvoiceEmail\Logger\Handler</item>
+            </argument>
+        </arguments>        
+    </type>
+</config>

@@ -29,7 +29,6 @@ After configuration, whenever an order is placed using the selected payment meth
 ## Developer Information
 - **Namespace**: `WB`
 - **Module**: `InvoiceEmail`
-- **Observer**: `WB\InvoiceEmail\Observer\Sales\Order\CodOrderAutoInvoice`
 - **Plugin**: `WB\InvoiceEmail\Plugin\Order\PlaceAfterPlugin`
 
 
